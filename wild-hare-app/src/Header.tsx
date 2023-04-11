@@ -8,7 +8,9 @@ import Contact from './components/Contact';
 const Header = () => {
     return(
     <header id="header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Link to='/'> 
+            <img src={logo} id="header-logo" alt="logo" />
+        </Link>
         <p id="logo-text">Wild Hare Ranch</p>
         <ul id="nav">
             <li><Link className="text-link" to='/topics'>Topics</Link></li>

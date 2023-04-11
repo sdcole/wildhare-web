@@ -3,6 +3,9 @@ import logo from './logo.svg';
 import {Link} from 'react-router-dom';
 import Main from './Main';
 import Header from './Header';
+import fbLogo from './images/facebook.png'
+import igLogo from './images/instagram.png'
+import tiktokLogo from './images/tiktok.png'
 import './App.css';
 
 function App() {
@@ -11,25 +14,23 @@ function App() {
     <div className="App">
       <Header />
       <div className="App-content">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <ul>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/topics'>Topics</Link></li>
-          <li><Link to='/contact'>Contact</Link></li>
-        </ul>
+        <Main />  
       </div>
-      <Main />
+      <div id="footer" className="App-footer">
+                <p>Wild Hare Ranch LLC. 2023</p>
+                <div id="footer-socials">
+                  <a href="https://www.facebook.com/WildHareRanchLLC/" target="_blank" rel="noreferrer">
+                    <img src={fbLogo} alt="fbLogo"></img>
+                  </a>
+                  <a href="https://www.instagram.com/wild_hare_ranch/" target="_blank" rel="noreferrer">
+                    <img src={igLogo} alt="igLogo"></img>
+                  </a>
+                  <a href="https://www.tiktok.com/@wildhareranch" target="_blank" rel="noreferrer">
+                    <img src={tiktokLogo} alt="tiktokLogo"></img>
+                  </a>
+                  
+                </div>
+            </div>
     </div>
   );
 }

@@ -5,11 +5,17 @@
   font-family: 'Roboto', serif;
 }
 
-.App-logo {
+#header-logo {
   height: 8vmin;
   padding: 10px;
-  pointer-events: none;
   float : left;
+}
+
+#footer-socials {
+  align : center;
+  height: 2vmin;
+  /*padding: 4vmin;*/
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -33,9 +39,10 @@
   text-decoration-color: #61dafb;
   min-height: 10vh;
 }
+
+
 .text-link {
   color: inherit;
-  text-decoration: inherit;
   text-decoration: none;
 }
 
@@ -67,10 +74,11 @@ ul#nav li {
   min-height: 10vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /*align-items: center;
   justify-content: center;
+  */
   font-size: calc(10px + vmin);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .App-link {
